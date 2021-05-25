@@ -72,7 +72,7 @@ service keymaster-3-0 /sbin/android.hardware.keymaster@3.0-service
     disabled
     seclabel u:r:recovery:s0
 
-service erase_para /sbin/dd if=/dev/zero of=/dev/block/bootdevice/by-name/para
+service erase_para /sbin/dd if=/dev/zero of=/dev/block/platform/bootdevice/by-name/para
     user root
     group root
     disabled
